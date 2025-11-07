@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "title": "Cuisiniste haut de gamme à Ternat",
+    "description": "B&S Kitchen imagine et installe des cuisines sur mesure en Belgique. Matériaux nobles, accompagnement complet et finitions irréprochables.",
+    "keywords": [
+      "cuisine sur mesure",
+      "cuisiniste ternat",
+      "agencement cuisine",
+      "plan de travail pierre",
+      "cuisine premium"
+    ]
+  },
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "realisations": "Réalisations",
+    "about": "À propos",
+    "contact": "Contact",
+    "cta": "Demander un devis"
+  },
+  "hero": {
+    "badge": "Cuisines sur mesure · Ternat",
+    "title": "La cuisine qui vous ressemble, conçue pour durer",
+    "subtitle": "Nous transformons les espaces de vie en cuisines d'exception mêlant bois, pierre et métal. Chaque détail est pensé pour votre confort quotidien.",
+    "primaryCta": "Demander un devis",
+    "secondaryCta": "Voir nos réalisations",
+    "backgroundAlt": "Cuisine contemporaine aux finitions bois et laiton"
+  },
+  "servicesIntro": {
+    "title": "Un accompagnement complet pour votre cuisine",
+    "subtitle": "De la première esquisse à la pose des finitions, notre équipe multidisciplinaire coordonne chaque étape avec précision."
+  },
+  "services": [
+    {
+      "title": "Conception sur mesure",
+      "description": "Analyse de vos besoins, modélisation 3D photoréaliste et sélection de matériaux adaptés à votre usage.",
+      "icon": "design"
+    },
+    {
+      "title": "Fabrication artisanale",
+      "description": "Atelier partenaire en Belgique, finitions main pour garantir la longévité et la précision des assemblages.",
+      "icon": "craft"
+    },
+    {
+      "title": "Gestion de chantier",
+      "description": "Coordination des corps de métier (plomberie, électricité, pierre, menuiserie) et planning maîtrisé.",
+      "icon": "planning"
+    },
+    {
+      "title": "Suivi après-installation",
+      "description": "Réglages fins, entretien et adaptations pour garder votre cuisine impeccable année après année.",
+      "icon": "support"
+    }
+  ],
+  "values": {
+    "title": "Nos convictions",
+    "items": [
+      {
+        "title": "Matériaux nobles",
+        "description": "Bois massif, pierre naturelle, façades laquées : nous sélectionnons des matières durables et traçables."
+      },
+      {
+        "title": "Ergonomie sur mesure",
+        "description": "Implantation optimisée, éclairage intégré et rangements intelligents pour un usage fluide au quotidien."
+      },
+      {
+        "title": "Esthétique intemporelle",
+        "description": "Des lignes sobres et des détails laiton qui subliment les volumes sans jamais les alourdir."
+      }
+    ]
+  },
+  "process": {
+    "title": "Un processus transparent",
+    "steps": [
+      {
+        "title": "Rencontre & inspiration",
+        "description": "Écoute de vos envies, analyse de l'espace et définition du budget cible."
+      },
+      {
+        "title": "Design détaillé",
+        "description": "Plans techniques, sélections matériaux, rendu 3D et devis clair."
+      },
+      {
+        "title": "Fabrication & pose",
+        "description": "Production locale, contrôles qualité et installation orchestrée par notre chef de projet."
+      }
+    ]
+  },
+  "realisationsIntro": {
+    "title": "Des cuisines pensées comme des pièces à vivre",
+    "subtitle": "Chaque projet raconte l'histoire d'une famille. Découvrez quelques réalisations emblématiques."
+  },
+  "testimonials": [
+    {
+      "quote": "Nous voulions une cuisine chaleureuse et élégante. Le résultat dépasse nos attentes : un espace convivial où chaque détail a été soigné.",
+      "author": "Claire & Julien, Ternat"
+    },
+    {
+      "quote": "Planification irréprochable, matériaux superbes et finitions parfaites. L'équipe a été présente jusqu'à la dernière retouche.",
+      "author": "Famille Verbruggen, Dilbeek"
+    }
+  ],
+  "cta": {
+    "title": "Prêt à imaginer votre cuisine?",
+    "subtitle": "Rencontrons-nous dans votre espace ou dans notre showroom partenaire. Nous préparons un devis détaillé sous 10 jours ouvrés.",
+    "button": "Planifier un rendez-vous"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Parlez-nous de votre projet de cuisine sur mesure. Nous reviendrons vers vous rapidement avec les premiers éléments.",
+    "address": "Ambachtenlaan 12, 1740 Ternat, Belgique",
+    "phone": "+32 2 123 45 67",
+    "email": "contact@bskitchen.be",
+    "schedule": "Du lundi au samedi, 9h00 – 18h30 sur rendez-vous",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre e-mail",
+      "phone": "Votre numéro",
+      "projectType": "Type de projet",
+      "message": "Décrivez votre projet",
+      "submit": "Envoyer la demande"
+    },
+    "notice": "En envoyant ce formulaire, vous acceptez que B&S Kitchen vous contacte au sujet de votre projet."
+  },
+  "about": {
+    "title": "Des artisans designers, passionnés de matériaux",
+    "introduction": "Depuis plus de 12 ans, B&S Kitchen conçoit des cuisines sur mesure pour des particuliers exigeants en Belgique.",
+    "paragraphs": [
+      "Notre équipe réunit architectes d'intérieur, menuisiers et spécialistes de la pierre. Nous partageons une même exigence : créer des cuisines durables, fonctionnelles et élégantes.",
+      "Nous travaillons avec un réseau d'artisans locaux pour garantir une production responsable, des délais maîtrisés et un suivi après-installation irréprochable."
+    ],
+    "highlights": [
+      {
+        "label": "12 ans",
+        "description": "d'expertise en agencement sur mesure"
+      },
+      {
+        "label": "92%",
+        "description": "de clients recommandent B&S Kitchen"
+      },
+      {
+        "label": "Matériaux",
+        "description": "bois massif certifié, pierre naturelle, inox brossé"
+      }
+    ]
+  },
+  "footer": {
+    "baseline": "Cuisines sur mesure en Belgique",
+    "copyright": "© "
+  },
+  "projects": [
+    {
+      "slug": "ternat-chene-fume",
+      "title": "Cuisine familiale en chêne fumé",
+      "summary": "Un espace lumineux qui marie chêne fumé, pierre de Bourgogne et laiton brossé.",
+      "location": "Ternat",
+      "year": "2023",
+      "surface": "34 m²",
+      "materials": ["Chêne fumé", "Pierre de Bourgogne", "Laiton brossé"],
+      "thumbnail": "https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?auto=format&fit=crop&w=800&q=80",
+      "heroImage": "https://images.unsplash.com/photo-1600585154340-0ef3c08dcdb6?auto=format&fit=crop&w=1600&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1558024920-b4df0f6692d7?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600210491891-09c0e9384210?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Conçue pour une famille qui aime recevoir, cette cuisine combine un îlot généreux, des rangements dissimulés et un éclairage d'ambiance discret.",
+      "highlights": [
+        "Îlot central avec table intégrée",
+        "Système coulissant pour électroménagers",
+        "Crédence en pierre rétroéclairée"
+      ]
+    },
+    {
+      "slug": "bruxelles-marbre-noir",
+      "title": "Appartement bruxellois en marbre noir",
+      "summary": "Une cuisine linéaire ultra-sobre dans un appartement Art Déco rénové.",
+      "location": "Bruxelles",
+      "year": "2022",
+      "surface": "21 m²",
+      "materials": ["Marbre Noir Marquina", "Noyer huilé", "Inox noir"],
+      "thumbnail": "https://images.unsplash.com/photo-1512914890250-353c97c9e7c5?auto=format&fit=crop&w=800&q=80",
+      "heroImage": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1600607687920-4e2a87c11f86?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45edb1ef5c?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Les façades en marbre Noir Marquina contrastent avec des niches en noyer huilé. L'éclairage linéaire souligne la pureté des volumes.",
+      "highlights": [
+        "Poignées fraisées sur mesure",
+        "Hotte intégrée dans le plafond",
+        "Plan de travail en inox noir anti-trace"
+      ]
+    },
+    {
+      "slug": "malderen-atelier-gourmand",
+      "title": "Atelier gourmand à Malderen",
+      "summary": "Un espace de travail pour passionné de gastronomie, pensé comme un laboratoire chaleureux.",
+      "location": "Malderen",
+      "year": "2023",
+      "surface": "27 m²",
+      "materials": ["Chêne clair", "Quartzite Patagonia", "Acier patiné"],
+      "thumbnail": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+      "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1616627458537-5b3f095df163?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1616628185260-5d5f3ddf8855?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Pensée pour un chef amateur, cette cuisine intègre un piano de cuisson professionnel, des zones de préparation différenciées et une bibliothèque d'épices sur mesure.",
+      "highlights": [
+        "Piano Lacanche intégré",
+        "Tablette escamotable pour pâtisserie",
+        "Système d'aspiration encastré"
+      ]
+    }
+  ]
+}

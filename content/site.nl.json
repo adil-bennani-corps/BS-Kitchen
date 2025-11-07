@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "title": "Premium keukenbouwer in Ternat",
+    "description": "B&S Kitchen ontwerpt en installeert maatkeukens in België. Edele materialen, volledige begeleiding en perfecte afwerking.",
+    "keywords": [
+      "maatkeuken",
+      "keukenbouwer ternat",
+      "keuken op maat",
+      "natuursteen werkblad",
+      "premium keuken"
+    ]
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Diensten",
+    "realisations": "Realisaties",
+    "about": "Over ons",
+    "contact": "Contact",
+    "cta": "Vraag een offerte"
+  },
+  "hero": {
+    "badge": "Maatkeukens · Ternat",
+    "title": "Uw keuken op maat, gebouwd voor het leven",
+    "subtitle": "Wij transformeren leefruimtes tot uitzonderlijke keukens in hout, steen en metaal. Elk detail is afgestemd op uw dagelijkse ritme.",
+    "primaryCta": "Vraag een offerte",
+    "secondaryCta": "Bekijk realisaties",
+    "backgroundAlt": "Hedendaagse keuken met houten afwerking en messing details"
+  },
+  "servicesIntro": {
+    "title": "Een volledige begeleiding voor uw keuken",
+    "subtitle": "Van het eerste idee tot de laatste afwerking coördineert ons multidisciplinair team elke stap met precisie."
+  },
+  "services": [
+    {
+      "title": "Maatwerk ontwerp",
+      "description": "Analyse van uw wensen, fotorealistische 3D-modellen en materiaalkeuze afgestemd op uw gebruik.",
+      "icon": "design"
+    },
+    {
+      "title": "Ambachtelijke productie",
+      "description": "Belgische partnerateliers met handmatige afwerking voor duurzame verbindingen.",
+      "icon": "craft"
+    },
+    {
+      "title": "Projectcoördinatie",
+      "description": "Planning en opvolging van alle vakmannen (sanitair, elektriciteit, steen, schrijnwerk).",
+      "icon": "planning"
+    },
+    {
+      "title": "Nazorg",
+      "description": "Fijnstellingen, onderhoud en aanpassingen zodat uw keuken jarenlang in topvorm blijft.",
+      "icon": "support"
+    }
+  ],
+  "values": {
+    "title": "Onze overtuigingen",
+    "items": [
+      {
+        "title": "Edele materialen",
+        "description": "Massief hout, natuursteen, gelakte fronten: we kiezen duurzame en traceerbare materialen."
+      },
+      {
+        "title": "Ergonomie op maat",
+        "description": "Geoptimaliseerde indeling, geïntegreerde verlichting en slimme opbergoplossingen voor dagelijks comfort."
+      },
+      {
+        "title": "Tijdloze esthetiek",
+        "description": "Sobere lijnen en messing accenten geven karakter zonder te overheersen."
+      }
+    ]
+  },
+  "process": {
+    "title": "Een transparant traject",
+    "steps": [
+      {
+        "title": "Ontdekking & inspiratie",
+        "description": "Luisteren naar uw wensen, analyse van de ruimte en budgetbepaling."
+      },
+      {
+        "title": "Gedetailleerd ontwerp",
+        "description": "Technische plannen, materiaalkeuze, 3D-visualisatie en heldere offerte."
+      },
+      {
+        "title": "Productie & plaatsing",
+        "description": "Lokale productie, kwaliteitscontroles en installatie onder leiding van onze projectleider."
+      }
+    ]
+  },
+  "realisationsIntro": {
+    "title": "Keukens als hart van het huis",
+    "subtitle": "Elk project vertelt het verhaal van een gezin. Ontdek enkele kenmerkende realisaties."
+  },
+  "testimonials": [
+    {
+      "quote": "We wilden een warme, elegante keuken. Het resultaat overtreft onze verwachtingen: een gezellige ruimte waarin elk detail klopt.",
+      "author": "Claire & Julien, Ternat"
+    },
+    {
+      "quote": "Perfecte planning, schitterende materialen en een foutloze afwerking. Het team bleef betrokken tot de laatste afwerking.",
+      "author": "Familie Verbruggen, Dilbeek"
+    }
+  ],
+  "cta": {
+    "title": "Klaar om uw keuken te ontwerpen?",
+    "subtitle": "We komen bij u langs of ontvangen u in onze partner-showroom. Binnen 10 werkdagen ontvangt u een gedetailleerde offerte.",
+    "button": "Plan een afspraak"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Vertel ons over uw maatkeuken. We nemen snel contact op met de eerste voorstellen.",
+    "address": "Ambachtenlaan 12, 1740 Ternat, België",
+    "phone": "+32 2 123 45 67",
+    "email": "contact@bskitchen.be",
+    "schedule": "Maandag tot en met zaterdag, 9u00 – 18u30 op afspraak",
+    "form": {
+      "name": "Uw naam",
+      "email": "Uw e-mail",
+      "phone": "Uw telefoon",
+      "projectType": "Projecttype",
+      "message": "Beschrijf uw project",
+      "submit": "Verstuur aanvraag"
+    },
+    "notice": "Door dit formulier te verzenden, gaat u ermee akkoord dat B&S Kitchen contact met u opneemt over uw project."
+  },
+  "about": {
+    "title": "Designers en ambachtslui met liefde voor materialen",
+    "introduction": "Al meer dan 12 jaar ontwerpt B&S Kitchen maatkeukens voor veeleisende particulieren in België.",
+    "paragraphs": [
+      "Ons team verenigt interieurarchitecten, schrijnwerkers en steenspecialisten. We delen dezelfde ambitie: duurzame, functionele en elegante keukens creëren.",
+      "We werken met een netwerk van lokale vakmensen voor een verantwoorde productie, strakke deadlines en onberispelijke nazorg."
+    ],
+    "highlights": [
+      {
+        "label": "12 jaar",
+        "description": "ervaring in maatwerkinterieur"
+      },
+      {
+        "label": "92%",
+        "description": "van de klanten beveelt B&S Kitchen aan"
+      },
+      {
+        "label": "Materialen",
+        "description": "gecertificeerd massief hout, natuursteen, geborsteld inox"
+      }
+    ]
+  },
+  "footer": {
+    "baseline": "Maatkeukens in België",
+    "copyright": "© "
+  },
+  "projects": [
+    {
+      "slug": "ternat-eikenfineer",
+      "title": "Familiekeuken in gerookt eiken",
+      "summary": "Een lichte ruimte waarin gerookt eiken, Bourgondische steen en geborsteld messing samenkomen.",
+      "location": "Ternat",
+      "year": "2023",
+      "surface": "34 m²",
+      "materials": ["Gerookt eiken", "Bourgondische steen", "Geborsteld messing"],
+      "thumbnail": "https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?auto=format&fit=crop&w=800&q=80",
+      "heroImage": "https://images.unsplash.com/photo-1600585154340-0ef3c08dcdb6?auto=format&fit=crop&w=1600&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1558024920-b4df0f6692d7?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1600210491891-09c0e9384210?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Ontworpen voor een gastvrije familie met een royaal eiland, verborgen opbergruimte en discrete sfeerlichting.",
+      "highlights": [
+        "Eiland met geïntegreerde tafel",
+        "Uitschuifsysteem voor toestellen",
+        "Achterwand in verlichte natuursteen"
+      ]
+    },
+    {
+      "slug": "brussel-zwart-marmer",
+      "title": "Brusselse flat in zwart marmer",
+      "summary": "Een ultrastrakke lijnkeuken in een gerenoveerd art-deco-appartement.",
+      "location": "Brussel",
+      "year": "2022",
+      "surface": "21 m²",
+      "materials": ["Zwart Marquina marmer", "Geoliede notelaar", "Zwart inox"],
+      "thumbnail": "https://images.unsplash.com/photo-1512914890250-353c97c9e7c5?auto=format&fit=crop&w=800&q=80",
+      "heroImage": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1600607687920-4e2a87c11f86?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45edb1ef5c?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Fronten in zwart Marquina marmer contrasteren met nissen in geoliede notelaar. Lijnverlichting benadrukt de pure volumes.",
+      "highlights": [
+        "Ingefreesde handgrepen op maat",
+        "In het plafond geïntegreerde dampkap",
+        "Werkblad in vlekbestendig zwart inox"
+      ]
+    },
+    {
+      "slug": "malderen-kookatelier",
+      "title": "Culinaire studio in Malderen",
+      "summary": "Een warme werkruimte voor een kookliefhebber, ontworpen als een verfijnd atelier.",
+      "location": "Malderen",
+      "year": "2023",
+      "surface": "27 m²",
+      "materials": ["Licht eiken", "Quartzite Patagonia", "Gepatineerd staal"],
+      "thumbnail": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+      "heroImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1616627458537-5b3f095df163?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1400&q=80",
+        "https://images.unsplash.com/photo-1616628185260-5d5f3ddf8855?auto=format&fit=crop&w=1400&q=80"
+      ],
+      "description": "Ontworpen voor een hobbychef met een professionele fornuis, aparte werkzones en een kruidenbibliotheek op maat.",
+      "highlights": [
+        "Geïntegreerd Lacanche fornuis",
+        "Uitschuifbaar werkblad voor patisserie",
+        "Ingebouwd afzuigsysteem"
+      ]
+    }
+  ]
+}
