@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "installation-cuisine",
+    "title": "Installation de cuisine",
+    "short": "Pose complète, réglages et raccords techniques.",
+    "bullets": [
+      "Montage et fixation des caissons",
+      "Alignements façades/portes",
+      "Raccords eau/électricité (coordination)",
+      "Réglages charnières et coulissants"
+    ],
+    "icon": "wrench",
+    "schemaType": "Service"
+  },
+  {
+    "slug": "ajustements-finitions",
+    "title": "Ajustements & finitions",
+    "short": "Découpes, plinthes, joints et retouches invisibles.",
+    "bullets": [
+      "Découpes sur mesure sur site",
+      "Rattrapage des niveaux/murs",
+      "Joints propres et durables",
+      "Corrections d’alignement"
+    ],
+    "icon": "adjustments",
+    "schemaType": "Service"
+  },
+  {
+    "slug": "plans-travail-electromenager",
+    "title": "Plans de travail & électroménager",
+    "short": "Mise en place précise et intégration propre.",
+    "bullets": [
+      "Découpes évier/plaques",
+      "Jointoiement et étanchéité",
+      "Intégration hotte/lave-vaisselle",
+      "Mise en service basique*"
+    ],
+    "icon": "countertop",
+    "schemaType": "Service"
+  },
+  {
+    "slug": "optimisation-implantation",
+    "title": "Optimisation d’implantation",
+    "short": "Conseils pratiques avant pose pour un espace fluide.",
+    "bullets": [
+      "Implantation triangle de travail",
+      "Ergonomie & hauteurs",
+      "Passage des câbles discret",
+      "Préconisations techniques"
+    ],
+    "icon": "compass",
+    "schemaType": "Service"
+  },
+  {
+    "slug": "sav-petites-renovations",
+    "title": "SAV & petites rénovations",
+    "short": "Remise en état, remplacement de pièces et reprises locales.",
+    "bullets": [
+      "Charnières/coulisses",
+      "Façades et plinthes",
+      "Plans & crédences locales",
+      "Petites reprises peinture/silicone"
+    ],
+    "icon": "toolbox",
+    "schemaType": "Service"
+  }
+]

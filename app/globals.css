@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --font-sans: 'Inter', 'General Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --shadow-soft: 0 25px 60px -35px rgba(28, 28, 28, 0.35);
+}
+
+@layer base {
+  * {
+    @apply border-charcoal/10;
+  }
+
+  body {
+    @apply bg-off-white text-charcoal antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold text-charcoal tracking-tight;
+  }
+
+  p {
+    @apply text-stone;
+  }
+
+  a {
+    @apply text-sage underline-offset-4 transition-colors hover:text-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-off-white;
+  }
+
+  button {
+    @apply font-medium;
+  }
+}

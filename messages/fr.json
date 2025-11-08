@@ -1,0 +1,53 @@
+{
+  "language": {
+    "label": "Langue"
+  },
+  "home": {
+    "title": "Cuisines premium conçues pour sublimer votre quotidien",
+    "description": "B&S Kitchen imagine, fabrique et installe des cuisines sur-mesure mêlant bois, pierre et métal pour créer des espaces chaleureux et fonctionnels.",
+    "cta": "Demander un devis"
+  },
+  "services": {
+    "meta": {
+      "title": "Services d’installation et de rénovation de cuisines | B&S Kitchen",
+      "description": "Installation, ajustements et finitions de cuisines à Ternat, Bruxelles et dans le Brabant. Pose précise, raccords coordonnés et suivi personnalisé."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "current": "Services"
+    },
+    "title": "Nos services d’installation & rénovation",
+    "intro": [
+      "Depuis plus de vingt ans, B&S Kitchen installe, ajuste et remet à niveau vos cuisines pour qu’elles soient prêtes à vivre dès la première journée.",
+      "Nous intervenons à Ternat, Bruxelles et dans tout le Brabant pour garantir une pose impeccable, quel que soit le fabricant de votre cuisine."
+    ],
+    "cta": {
+      "title": "Un projet ?",
+      "button": "Demander un devis",
+      "blurb": "Discutons de votre installation, rénovation ou ajustement de cuisine et définissons un planning adapté."
+    },
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      {
+        "question": "Travaillez-vous avec toutes les marques de cuisines ?",
+        "answer": "Oui, nous intervenons sur la plupart des marques distribuées en Belgique et adaptons notre méthode aux spécificités de chaque fabricant."
+      },
+      {
+        "question": "Faites-vous les raccordements eau/électricité ?",
+        "answer": "Nous réalisons la préparation et la mise en place, et coordonnons avec vos corps de métier agréés si nécessaire."
+      },
+      {
+        "question": "Pouvez-vous intervenir sur une cuisine déjà posée ?",
+        "answer": "Oui, ajustements, reprises d’alignement, remplacement de façades/plinthes ou plans selon faisabilité."
+      },
+      {
+        "question": "Quel est votre délai moyen d’intervention ?",
+        "answer": "Selon la complexité : 1 à 3 semaines. Nous proposons des créneaux prioritaires selon urgences."
+      },
+      {
+        "question": "Vous débarrassez l’ancien mobilier ?",
+        "answer": "Sur demande. Nous pouvons démonter et évacuer l’existant (option)."
+      }
+    ]
+  }
+}

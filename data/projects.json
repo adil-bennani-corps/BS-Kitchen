@@ -1,0 +1,321 @@
+[
+  {
+    "id": "cuisine-ouverte-ternat",
+    "title": "Cuisine ouverte chaleureuse à Ternat",
+    "city": "Ternat",
+    "style": "moderne",
+    "worktop": "Quartz",
+    "appliances": [
+      "Bosch",
+      "Siemens"
+    ],
+    "materials": [
+      "bois",
+      "laque",
+      "inox"
+    ],
+    "tech_difficulties": [
+      "rattrapage niveaux",
+      "ajustement façades",
+      "intégration hotte"
+    ],
+    "year": 2024,
+    "images": [
+      "/placeholders/renov-1.jpg",
+      "/placeholders/renov-2.jpg",
+      "/placeholders/renov-3.jpg",
+      "/placeholders/renov-4.jpg",
+      "/placeholders/renov-5.jpg",
+      "/placeholders/renov-6.jpg"
+    ],
+    "tags": [
+      "avant/après",
+      "rénovation partielle",
+      "espace familial"
+    ],
+    "client_context": "Une famille souhaitait ouvrir la cuisine sur le séjour pour gagner en convivialité sans interrompre leur quotidien.",
+    "constraints": [
+      "Mur porteur nécessitant un renfort discret",
+      "Conservation des meubles existants côté séjour",
+      "Intervention dans un logement occupé"
+    ],
+    "solutions": [
+      "Mise en place d'un linteau métallique caché dans un coffrage bois",
+      "Ajustement millimétré des caissons pour épouser la cloison existante",
+      "Coordination des raccords eau et électricité en dehors des heures de pointe"
+    ],
+    "result": "La cuisine s'ouvre désormais sur le séjour avec un plan snack lumineux et des alignements parfaitement maîtrisés.",
+    "testimonial": {
+      "author": "Famille D., Ternat",
+      "quote": "Une équipe à l'écoute, des finitions impeccables. Nous profitons enfin d'un espace convivial pour toute la famille."
+    },
+    "before_after": {
+      "before": "/placeholders/renov-7.jpg",
+      "after": "/placeholders/renov-1.jpg"
+    }
+  },
+  {
+    "id": "ilot-bois-dilbeek",
+    "title": "Cuisine avec îlot en bois à Dilbeek",
+    "city": "Dilbeek",
+    "style": "bois",
+    "worktop": "Granite",
+    "appliances": [
+      "AEG",
+      "Whirlpool"
+    ],
+    "materials": [
+      "bois",
+      "pierre",
+      "mélaminé"
+    ],
+    "tech_difficulties": [
+      "coupe plan de travail",
+      "rattrapage niveaux",
+      "ajustement façades"
+    ],
+    "year": 2023,
+    "images": [
+      "/placeholders/renov-2.jpg",
+      "/placeholders/renov-3.jpg",
+      "/placeholders/renov-4.jpg",
+      "/placeholders/renov-5.jpg",
+      "/placeholders/renov-6.jpg",
+      "/placeholders/renov-7.jpg"
+    ],
+    "tags": [
+      "avant/après",
+      "ajustements",
+      "îlot central"
+    ],
+    "client_context": "Un couple venait de réceptionner une cuisine prête-à-monter et souhaitait un îlot parfaitement aligné avec le reste des meubles.",
+    "constraints": [
+      "Sol légèrement irrégulier sur 4 mètres",
+      "Passage de gaines électriques à cacher",
+      "Délais courts avant emménagement"
+    ],
+    "solutions": [
+      "Calage précis des piètements avec des cales invisibles",
+      "Création d'un socle technique pour faire circuler les câbles",
+      "Pré-assemblage en atelier pour réduire le temps sur place"
+    ],
+    "result": "L'îlot en bois massif s'intègre désormais sans faux-niveau et offre des rangements généreux.",
+    "testimonial": {
+      "author": "Sophie & Marc, Dilbeek",
+      "quote": "Rien ne dépasse, les alignements sont parfaits et l'îlot est solidement fixé. Travail précis et ponctuel."
+    },
+    "before_after": {
+      "before": "/placeholders/renov-8.jpg",
+      "after": "/placeholders/renov-2.jpg"
+    }
+  },
+  {
+    "id": "optimisation-bruxelles-loft",
+    "title": "Optimisation d'un loft à Bruxelles",
+    "city": "Bruxelles",
+    "style": "moderne",
+    "worktop": "Céramique",
+    "appliances": [
+      "Siemens",
+      "Autre"
+    ],
+    "materials": [
+      "laque",
+      "inox",
+      "pierre"
+    ],
+    "tech_difficulties": [
+      "passage des câbles discret",
+      "intégration hotte",
+      "coupe plan de travail"
+    ],
+    "year": 2024,
+    "images": [
+      "/placeholders/renov-3.jpg",
+      "/placeholders/renov-4.jpg",
+      "/placeholders/renov-5.jpg",
+      "/placeholders/renov-6.jpg",
+      "/placeholders/renov-7.jpg",
+      "/placeholders/renov-8.jpg"
+    ],
+    "tags": [
+      "petit espace",
+      "implantation optimisée",
+      "avant/après"
+    ],
+    "client_context": "Le propriétaire d'un loft bruxellois souhaitait intégrer une cuisine discrète sans cloisonner l'espace ouvert.",
+    "constraints": [
+      "Absence de mur porteur pour fixer les meubles hauts",
+      "Cheminement des câbles dans une dalle béton",
+      "Conservation d'une ligne visuelle épurée"
+    ],
+    "solutions": [
+      "Structure autoporteuse pour les meubles hauts sans toucher aux poutres",
+      "Rainurage minimal de la dalle pour loger les gaines",
+      "Finition des chants avec profils inox discrets"
+    ],
+    "result": "La cuisine se fond dans le loft avec des lignes continues et un éclairage intégré qui souligne les volumes.",
+    "before_after": null
+  },
+  {
+    "id": "classique-asse-granit",
+    "title": "Cuisine classique lumineuse à Asse",
+    "city": "Asse",
+    "style": "classique",
+    "worktop": "Stratifié",
+    "appliances": [
+      "Bosch",
+      "Autre"
+    ],
+    "materials": [
+      "bois",
+      "mélaminé",
+      "pierre"
+    ],
+    "tech_difficulties": [
+      "rattrapage niveaux",
+      "ajustement façades",
+      "intégration hotte"
+    ],
+    "year": 2022,
+    "images": [
+      "/placeholders/renov-4.jpg",
+      "/placeholders/renov-5.jpg",
+      "/placeholders/renov-6.jpg",
+      "/placeholders/renov-7.jpg",
+      "/placeholders/renov-8.jpg",
+      "/placeholders/renov-9.jpg"
+    ],
+    "tags": [
+      "rénovation complète",
+      "finition soignée",
+      "espace familial"
+    ],
+    "client_context": "Des propriétaires d'une maison quatre façades souhaitaient moderniser leur cuisine sans perdre le charme traditionnel.",
+    "constraints": [
+      "Plinthes anciennes à conserver",
+      "Hotte décorative à raccorder sur une sortie latérale",
+      "Luminosité naturelle limitée"
+    ],
+    "solutions": [
+      "Fabrication d'entretoises pour aligner les meubles sur les plinthes",
+      "Création d'un conduit discret dans les meubles hauts",
+      "Ajout d'un éclairage LED sous meubles pour compenser la lumière"
+    ],
+    "result": "La cuisine allie désormais tradition et confort moderne avec une ventilation invisible et des rangements optimisés.",
+    "testimonial": {
+      "author": "Famille V., Asse",
+      "quote": "Respect de notre style, délais tenus et une équipe soigneuse jusque dans les moindres détails."
+    },
+    "before_after": {
+      "before": "/placeholders/renov-9.jpg",
+      "after": "/placeholders/renov-4.jpg"
+    }
+  },
+  {
+    "id": "mixte-anderlecht-compact",
+    "title": "Cuisine compacte mixte à Anderlecht",
+    "city": "Anderlecht",
+    "style": "mixte",
+    "worktop": "Bois",
+    "appliances": [
+      "Whirlpool",
+      "Autre"
+    ],
+    "materials": [
+      "bois",
+      "laque",
+      "mélaminé"
+    ],
+    "tech_difficulties": [
+      "rattrapage niveaux",
+      "passage des câbles discret",
+      "ajustement façades"
+    ],
+    "year": 2023,
+    "images": [
+      "/placeholders/renov-5.jpg",
+      "/placeholders/renov-6.jpg",
+      "/placeholders/renov-7.jpg",
+      "/placeholders/renov-8.jpg",
+      "/placeholders/renov-9.jpg",
+      "/placeholders/renov-10.jpg"
+    ],
+    "tags": [
+      "petit espace",
+      "rénovation partielle",
+      "ajustements"
+    ],
+    "client_context": "Un appartement urbain nécessitait une optimisation maximale pour concilier rangement et espace repas.",
+    "constraints": [
+      "Réseaux techniques concentrés sur un seul mur",
+      "Piliers porteurs en saillie",
+      "Largeur de circulation réduite"
+    ],
+    "solutions": [
+      "Implantation en L avec meubles peu profonds côté pignon",
+      "Habillage sur mesure du pilier pour intégrer des rangements",
+      "Plans de travail affinés pour gagner quelques centimètres"
+    ],
+    "result": "La cuisine compacte devient fluide et fonctionnelle avec des modules sur mesure et des éclairages intégrés.",
+    "before_after": {
+      "before": "/placeholders/renov-10.jpg",
+      "after": "/placeholders/renov-5.jpg"
+    }
+  },
+  {
+    "id": "laiton-bruxelles-renovation",
+    "title": "Rénovation bois et laiton à Bruxelles",
+    "city": "Bruxelles",
+    "style": "bois",
+    "worktop": "Granite",
+    "appliances": [
+      "AEG",
+      "Siemens"
+    ],
+    "materials": [
+      "bois",
+      "laque",
+      "pierre"
+    ],
+    "tech_difficulties": [
+      "coupe plan de travail",
+      "intégration hotte",
+      "rattrapage niveaux"
+    ],
+    "year": 2021,
+    "images": [
+      "/placeholders/renov-6.jpg",
+      "/placeholders/renov-7.jpg",
+      "/placeholders/renov-8.jpg",
+      "/placeholders/renov-9.jpg",
+      "/placeholders/renov-10.jpg",
+      "/placeholders/renov-1.jpg"
+    ],
+    "tags": [
+      "finitions laiton",
+      "avant/après",
+      "rénovation complète"
+    ],
+    "client_context": "Un couple souhaitait moderniser leur cuisine années 90 avec des touches laiton tout en conservant un esprit chaleureux.",
+    "constraints": [
+      "Ancien carrelage mural à conserver sur une partie",
+      "Découpes complexes autour d'une baie vitrée",
+      "Intégration d'un frigo américain encombrant"
+    ],
+    "solutions": [
+      "Fabrication de joues en laque sur mesure pour rattraper les écarts",
+      "Découpe précise du plan de travail granite autour des menuiseries",
+      "Ventilation optimisée pour le frigo dans un meuble habillé"
+    ],
+    "result": "La cuisine retrouve un éclat premium avec des détails laiton, un plan de travail parfaitement ajusté et des façades rehaussées.",
+    "testimonial": {
+      "author": "Famille L., Bruxelles",
+      "quote": "Des conseils judicieux et un soin remarquable pour chaque finition, nous recommandons sans hésiter."
+    },
+    "before_after": {
+      "before": "/placeholders/renov-2.jpg",
+      "after": "/placeholders/renov-6.jpg"
+    }
+  }
+]
