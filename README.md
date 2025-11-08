@@ -1,53 +1,58 @@
-# B&S Kitchen – Next.js Scaffold
+# B&S Kitchen
 
-Projet Next.js App Router en TypeScript pour le site vitrine B&S Kitchen avec localisation français/néerlandais.
+Site vitrine multilingue (FR/NL) pour B&S Kitchen, cuisiniste premium basé à Ternat, Belgique. Projet construit avec Next.js 14 (App Router) et optimisé pour un déploiement sur Vercel.
 
-## Stack & Outils
+## Fonctionnalités
 
-- [Next.js 14](https://nextjs.org/) (App Router, TypeScript)
-- [Tailwind CSS](https://tailwindcss.com/) avec thème personnalisé (charcoal, off-white, stone, brass, sage)
-- [shadcn/ui](https://ui.shadcn.com/) préconfiguré (exemple `Button`)
-- [Framer Motion](https://www.framer.com/motion/) pour les animations
-- [next-intl](https://next-intl-docs.vercel.app/) avec français par défaut et néerlandais secondaire
-- Qualité de code : ESLint, Prettier, Husky (pre-commit)
+- **Pages clés** : Accueil, Services, Réalisations (liste + détail), À propos, Contact.
+- **Contenu dynamique** : textes et projets gérés via fichiers JSON (`messages/*.json`, `data/services.json`, `data/projects.json`). Les visuels de démonstration se trouvent sous `public/placeholders/` et peuvent être remplacés facilement.
+- **SEO avancé** : métadonnées Open Graph/Twitter, balisage Schema.org (services, FAQ, projets), sitemap XML et robots.txt.
+- **Performance & accessibilité** : animations Framer Motion maîtrisées, composants accessibles (accordéons, carrousels), typographie optimisée via `next/font`.
+- **UI/UX** : navigation claire, CTA “Demander un devis”, design premium (charcoal, off-white, stone, brass, sauge).
 
-## Scripts
+## Démarrage
 
 ```bash
-npm install       # installe les dépendances
-npm run dev       # lance le serveur de développement
-npm run build     # build de production
-npm run start     # démarre le serveur de production
-npm run lint      # vérifie le linting ESLint
-npm run format    # formate les fichiers avec Prettier
-npm run format:check # vérifie le formatage
-npm run prepare   # installe Husky (hooks Git)
+npm install
+npm run dev
 ```
 
-## Structure
+Le site est accessible sur http://localhost:3000. Les locales sont servies sous `/fr` (par défaut) et `/nl`.
+
+## Structure principale
 
 ```
 app/
-  (fr)/           # pages par défaut (français)
-  (nl)/nl/        # équivalent néerlandais sous /nl
-  layout.tsx      # layout racine avec NextIntlClientProvider
+  (fr)/
+    page.tsx            # Accueil
+    services/page.tsx   # Services
+    realisations/
+      page.tsx          # Liste des réalisations
+      [id]/page.tsx     # Détail d'une réalisation
+  (nl)/nl/              # Pages NL (structure miroir)
 components/
-  LanguageSwitcher.tsx
-  layout/SiteShell.tsx
-  sections/HeroSection.tsx
-  ui/button.tsx   # composant shadcn/ui
+  ui/                   # Boutons, cartes, badges, headers
+  Project*.tsx          # Composants projets (liste + détail)
+data/
+  services.json, projects.json
 messages/
-  fr.json, nl.json
+  fr.json, nl.json      # Contenus localisés
+public/placeholders/    # Images de démonstration (à remplacer)
 ```
 
-`LanguageSwitcher` s'appuie sur `next-intl` et la configuration `i18n/routing.ts` pour générer les liens localisés. Tailwind est configuré via `tailwind.config.ts` avec palette personnalisée et plugin `tailwindcss-animate` pour la compatibilité shadcn/ui.
+## Personnalisation du contenu
 
-## Hooks Git
+- Les textes marketing et labels d'interface se trouvent dans `messages/fr.json` et `messages/nl.json`.
+- Les services affichés sur la page dédiée sont définis dans `data/services.json`.
+- Les réalisations et leurs détails (contraintes, solutions, témoignages) sont décrits dans `data/projects.json`.
+- Remplacez les images sous `public/placeholders/` par vos propres visuels en conservant les noms de fichiers.
 
-Pour activer Husky après l'installation :
+## Qualité & outillage
 
-```bash
-npm run prepare
-```
+- **Linting** : `npm run lint`
+- **Formatage** : `npm run format` / `npm run format:check`
+- **Husky** : `npm run prepare` pour installer les hooks Git (pre-commit).
 
-Cela crée les hooks Git, dont un pre-commit qui lance `npm run lint` et `npm run format:check`.
+## Déploiement
+
+Configurer les variables de build standards Vercel puis exécuter `npm run build`. Aucune variable d'environnement obligatoire n'est requise. Pensez à fournir de vraies images optimisées (Next.js `Image`) avant la mise en production.
