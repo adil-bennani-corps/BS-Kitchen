@@ -1,87 +1,118 @@
 import Link from 'next/link';
-import type { Dictionary } from '../lib/content';
-import type { Locale } from '../lib/i18n';
-import { company } from '../lib/company';
-import { buildRoute } from '../lib/routes';
+import { companyInfo } from '@/lib/company';
 
-interface FooterProps {
-  locale: Locale;
-  dictionary: Dictionary;
-}
-
-export default function Footer({ locale, dictionary }: FooterProps) {
-  const { navigation, footer, contact } = dictionary;
-  const year = new Date().getFullYear();
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer
-      style={{
-        background: '#111',
-        color: '#f5f1ec',
-        padding: '4rem 1.5rem 2.5rem'
-      }}
-    >
-      <div className="container" style={{ display: 'grid', gap: '2.5rem' }}>
-        <div>
-          <p style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.5rem', margin: 0 }}>B&S Kitchen</p>
-          <p style={{ marginTop: '0.75rem', maxWidth: 420, lineHeight: 1.6 }}>{footer.baseline}</p>
-          <address style={{ fontStyle: 'normal', marginTop: '1.25rem', lineHeight: 1.7 }}>
-            {contact.address}
-            <br />
-            <a href={`tel:${company.phone}`} style={{ color: '#f5f1ec' }}>
-              {contact.phone}
-            </a>
-            <br />
-            <a href={`mailto:${company.email}`} style={{ color: '#f5f1ec' }}>
-              {contact.email}
-            </a>
-          </address>
+    <footer className="bg-anthracite text-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          {/* Company Info */}
+          <div>
+            <h3 className="text-xl font-display font-bold mb-4">
+              {companyInfo.name}
+            </h3>
+            <p className="text-warm-200 text-sm mb-4">
+              Installateur professionnel de cuisines et aménagements intérieurs
+              avec plus de {companyInfo.experience} ans d'expérience.
+            </p>
+            <p className="text-warm-300 text-xs">
+              {companyInfo.legalName}
+              <br />
+              TVA : {companyInfo.vat}
+            </p>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2 text-sm text-warm-200">
+              <li>
+                <a
+                  href={`tel:${companyInfo.contact.phone}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {companyInfo.contact.phone}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${companyInfo.contact.email}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {companyInfo.contact.email}
+                </a>
+              </li>
+              <li className="pt-2">
+                {companyInfo.address.street}
+                <br />
+                {companyInfo.address.postalCode} {companyInfo.address.city}
+                <br />
+                {companyInfo.address.country}
+              </li>
+            </ul>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold mb-4">Navigation</h4>
+            <ul className="space-y-2 text-sm text-warm-200">
+              <li>
+                <Link href="/services" className="hover:text-white transition-colors">
+                  Nos services
+                </Link>
+              </li>
+              <li>
+                <Link href="/realisations" className="hover:text-white transition-colors">
+                  Réalisations
+                </Link>
+              </li>
+              <li>
+                <Link href="/a-propos" className="hover:text-white transition-colors">
+                  À propos
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Hours */}
+          <div>
+            <h4 className="font-semibold mb-4">Horaires</h4>
+            <ul className="space-y-2 text-sm text-warm-200">
+              <li>{companyInfo.hours.weekdays}</li>
+              <li>{companyInfo.hours.saturday}</li>
+              <li>{companyInfo.hours.sunday}</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <p style={{ fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Menu</p>
-          <ul style={{ listStyle: 'none', margin: '1rem 0 0', padding: 0, display: 'grid', gap: '0.75rem' }}>
-            <li>
-              <Link href={buildRoute(locale, 'home')} style={{ color: '#f5f1ec' }}>
-                {navigation.home}
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-warm-400/20">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-sm text-warm-300">
+              © {currentYear} {companyInfo.name}. Tous droits réservés.
+            </p>
+            <div className="flex space-x-6 text-sm text-warm-300">
+              <Link
+                href="/mentions-legales"
+                className="hover:text-white transition-colors"
+              >
+                Mentions légales
               </Link>
-            </li>
-            <li>
-              <Link href={buildRoute(locale, 'services')} style={{ color: '#f5f1ec' }}>
-                {navigation.services}
+              <Link
+                href="/politique-confidentialite"
+                className="hover:text-white transition-colors"
+              >
+                Politique de confidentialité
               </Link>
-            </li>
-            <li>
-              <Link href={buildRoute(locale, 'realisations')} style={{ color: '#f5f1ec' }}>
-                {navigation.realisations}
-              </Link>
-            </li>
-            <li>
-              <Link href={buildRoute(locale, 'about')} style={{ color: '#f5f1ec' }}>
-                {navigation.about}
-              </Link>
-            </li>
-            <li>
-              <Link href={buildRoute(locale, 'contact')} style={{ color: '#f5f1ec' }}>
-                {navigation.contact}
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p style={{ fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>{navigation.cta}</p>
-          <p style={{ marginTop: '1rem', lineHeight: 1.6 }}>{dictionary.cta.subtitle}</p>
-          <Link href={buildRoute(locale, 'contact')} className="button-primary" style={{ marginTop: '1.5rem', display: 'inline-flex' }}>
-            {dictionary.cta.button}
-          </Link>
-        </div>
-      </div>
-      <div style={{ borderTop: '1px solid rgba(245,241,236,0.2)', marginTop: '2.5rem', paddingTop: '1.5rem', fontSize: '0.85rem', color: 'rgba(245,241,236,0.7)' }}>
-        <div className="container" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'space-between' }}>
-          <span>
-            {footer.copyright}
-            {year} {company.name}
-          </span>
-          <span>{company.legalName} · TVA BE0123.456.789</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

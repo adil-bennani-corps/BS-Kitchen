@@ -1,146 +1,120 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState } from 'react';
-import type { Dictionary } from '../lib/content';
-import type { Locale } from '../lib/i18n';
-import { buildRoute } from '../lib/routes';
-import LocaleSwitcher from './LocaleSwitcher';
+import { useState, useEffect } from 'react';
+import { companyInfo } from '@/lib/company';
 
-interface HeaderProps {
-  locale: Locale;
-  dictionary: Dictionary;
-}
+export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-export default function Header({ locale, dictionary }: HeaderProps) {
-  const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
-  const { navigation } = dictionary;
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-  const navItems = [
-    { label: navigation.services, route: 'services' as const },
-    { label: navigation.realisations, route: 'realisations' as const },
-    { label: navigation.about, route: 'about' as const },
-    { label: navigation.contact, route: 'contact' as const }
+  const navigation = [
+    { name: 'Accueil', href: '/' },
+    { name: 'Services', href: '/services' },
+    { name: 'Réalisations', href: '/realisations' },
+    { name: 'À propos', href: '/a-propos' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
     <header
-      style={{
-        position: 'sticky',
-        top: 0,
-        zIndex: 40,
-        backdropFilter: 'blur(12px)',
-        background: 'rgba(245, 241, 236, 0.85)',
-        borderBottom: '1px solid rgba(35,32,28,0.08)'
-      }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-soft'
+          : 'bg-transparent'
+      }`}
     >
-      <div
-        className="container"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: '1rem 1.5rem'
-        }}
-      >
-        <Link href={buildRoute(locale, 'home')} aria-label="B&S Kitchen" style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.35rem', fontWeight: 600 }}>
-          B&S Kitchen
-        </Link>
-        <nav aria-label="Primary" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <button
-            type="button"
-            onClick={() => setIsOpen((prev) => !prev)}
-            className="visually-hidden"
-            aria-expanded={isOpen}
-            aria-controls="primary-navigation"
-          >
-            Menu
-          </button>
-          <ul
-            id="primary-navigation"
-            data-open={isOpen}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1.5rem',
-              listStyle: 'none',
-              margin: 0,
-              padding: 0
-            }}
-          >
-            {navItems.map((item) => {
-              const href = buildRoute(locale, item.route);
-              const isActive = pathname.startsWith(href);
-              return (
-                <li key={item.route}>
-                  <Link
-                    href={href}
-                    style={{
-                      position: 'relative',
-                      fontSize: '0.95rem',
-                      fontWeight: isActive ? 600 : 500,
-                      color: isActive ? 'var(--color-dark)' : 'var(--color-muted)'
-                    }}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              );
-            })}
-            <li>
-              <Link href={buildRoute(locale, 'contact')} className="button-primary">
-                {navigation.cta}
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2">
+            <span className="text-2xl font-display font-bold text-anthracite">
+              {companyInfo.name}
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-sm font-medium text-foreground hover:text-anthracite transition-colors"
+              >
+                {item.name}
               </Link>
-            </li>
-            <li>
-              <LocaleSwitcher locale={locale} />
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <style jsx>{`
-        @media (max-width: 900px) {
-          header div.container {
-            flex-wrap: wrap;
-          }
+            ))}
+            <a
+              href={`tel:${companyInfo.contact.phone}`}
+              className="inline-flex items-center px-5 py-2.5 rounded-full bg-anthracite text-white text-sm font-semibold hover:bg-accent-hover transition-all duration-200 shadow-soft hover:shadow-soft-lg"
+            >
+              Appelez-nous
+            </a>
+          </div>
 
-          #primary-navigation {
-            width: 100%;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 1rem;
-            display: none;
-          }
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 rounded-lg hover:bg-warm-100 transition-colors"
+            aria-label="Menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {isMobileMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
 
-          #primary-navigation[data-open='true'] {
-            display: flex;
-          }
-
-          #primary-navigation li {
-            width: 100%;
-          }
-
-          #primary-navigation li a.button-primary {
-            width: 100%;
-            justify-content: center;
-          }
-
-          button.visually-hidden {
-            position: static;
-            width: auto;
-            height: auto;
-            margin-left: auto;
-            clip: auto;
-            padding: 0.5rem 0.75rem;
-            border-radius: 999px;
-            background: rgba(35, 32, 28, 0.08);
-            font-size: 0.9rem;
-            font-weight: 600;
-          }
-        }
-      `}</style>
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden py-4 border-t border-warm-200">
+            <div className="flex flex-col space-y-3">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="px-4 py-2 text-base font-medium text-foreground hover:bg-warm-100 rounded-lg transition-colors"
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <a
+                href={`tel:${companyInfo.contact.phone}`}
+                className="mx-4 mt-2 inline-flex items-center justify-center px-5 py-3 rounded-full bg-anthracite text-white text-sm font-semibold"
+              >
+                Appelez-nous
+              </a>
+            </div>
+          </div>
+        )}
+      </nav>
     </header>
   );
 }

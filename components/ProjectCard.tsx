@@ -1,36 +1,48 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import type { Locale } from '../lib/i18n';
-import type { Dictionary } from '../lib/content';
-import { buildRoute } from '../lib/routes';
 
 interface ProjectCardProps {
-  locale: Locale;
-  project: Dictionary['projects'][number];
+  title: string;
+  location: string;
+  description: string;
+  materials: string[];
+  image: string;
 }
 
-export default function ProjectCard({ locale, project }: ProjectCardProps) {
+export default function ProjectCard({
+  title,
+  location,
+  description,
+  materials,
+  image,
+}: ProjectCardProps) {
   return (
-    <article className="card" style={{ padding: 0, overflow: 'hidden' }}>
-      <Link href={buildRoute(locale, 'realisations', project.slug)} style={{ color: 'inherit' }}>
-        <div style={{ position: 'relative', width: '100%', aspectRatio: '4 / 3' }}>
-          <Image
-            src={project.thumbnail}
-            alt={project.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 33vw"
-            style={{ objectFit: 'cover' }}
-            priority={false}
-          />
+    <div className="card group overflow-hidden p-0">
+      <div className="relative h-64 overflow-hidden">
+        <Image
+          src={image}
+          alt={`${title} - Installation de cuisine à ${location}`}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+      <div className="p-6">
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="text-lg font-semibold text-anthracite">{title}</h3>
+          <span className="text-xs text-muted">{location}</span>
         </div>
-        <div style={{ padding: '1.75rem' }}>
-          <p className="badge" style={{ marginBottom: '1rem' }}>
-            {project.location} · {project.year}
-          </p>
-          <h3 style={{ margin: '0 0 0.75rem', fontSize: '1.25rem', fontFamily: 'var(--font-playfair)' }}>{project.title}</h3>
-          <p style={{ margin: 0, color: 'var(--color-muted)', lineHeight: 1.6 }}>{project.summary}</p>
+        <p className="text-sm text-muted leading-relaxed mb-4">{description}</p>
+        <div className="flex flex-wrap gap-2">
+          {materials.map((material, index) => (
+            <span
+              key={index}
+              className="badge text-xs"
+            >
+              {material}
+            </span>
+          ))}
         </div>
-      </Link>
-    </article>
+      </div>
+    </div>
   );
 }
