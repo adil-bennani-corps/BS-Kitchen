@@ -18,7 +18,7 @@ export function ContactStrip() {
       <div className="container flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
         <h2 className="text-headline text-off-white">Un projet d’installation ou de rénovation ?</h2>
         <Button asChild size="lg" variant="secondary" className="bg-off-white text-charcoal hover:bg-off-white/90">
-          <Link href="/fr/contact">Demander un devis</Link>
+          <Link href="/contact">Demander un devis</Link>
         </Button>
       </div>
     </motion.section>

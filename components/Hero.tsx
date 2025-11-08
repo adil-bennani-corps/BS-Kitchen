@@ -30,7 +30,7 @@ export function Hero() {
               <Link href="/#contact-strip">Demander un devis</Link>
             </Button>
             <Link
-              href="/fr/realisations"
+              href="/realisations"
               className="inline-flex items-center justify-center text-base font-semibold text-charcoal underline-offset-4 transition-colors hover:text-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-off-white"
             >
               Voir nos réalisations

@@ -8,9 +8,9 @@ export type BreadcrumbsProps = {
 export function Breadcrumbs({projectTitle, projectId}: BreadcrumbsProps) {
   const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.bskitchen.be').replace(/\/$/, '');
   const trail = [
-    {name: 'Accueil', href: '/fr'},
-    {name: 'Réalisations', href: '/fr/realisations'},
-    {name: projectTitle, href: `/fr/realisations/${projectId}`}
+    {name: 'Accueil', href: '/'},
+    {name: 'Réalisations', href: '/realisations'},
+    {name: projectTitle, href: `/realisations/${projectId}`}
   ];
 
   const breadcrumbJsonLd = {

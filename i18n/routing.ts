@@ -9,6 +9,18 @@ export const pathnames = {
   '/contact': {
     fr: '/contact',
     nl: '/nl/contact'
+  },
+  '/services': {
+    fr: '/services',
+    nl: '/nl/diensten'
+  },
+  '/realisations': {
+    fr: '/realisations',
+    nl: '/nl/realisaties'
+  },
+  '/realisations/[id]': {
+    fr: '/realisations/[id]',
+    nl: '/nl/realisaties/[id]'
   }
 } as const;
 

@@ -45,7 +45,7 @@ export function generateMetadata({params}: PageParams): Metadata {
     openGraph: {
       title: `${project.title} — Réalisation | B&S Kitchen`,
       description,
-      url: `${baseUrl}/fr/realisations/${project.id}`,
+      url: `${baseUrl}/realisations/${project.id}`,
       type: 'article',
       images: project.images.length
         ? project.images.map((src) => ({url: `${baseUrl}${src}`, alt: `${project.title} à ${project.city}`}))
@@ -62,7 +62,7 @@ export default function ProjectDetailPage({params}: PageParams) {
   }
 
   const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.bskitchen.be').replace(/\/$/, '');
-  const projectUrl = `${baseUrl}/fr/realisations/${project.id}`;
+  const projectUrl = `${baseUrl}/realisations/${project.id}`;
   const relatedProjects = getRelatedProjects(project.id, project.style, project.city, 3);
 
   const projectJsonLd = {

@@ -18,19 +18,19 @@ export function SiteShell({children}: PropsWithChildren) {
           </div>
           <nav className="flex flex-wrap items-center gap-4 text-sm font-medium text-charcoal" aria-label="Navigation principale">
             <Link
-              href="/fr"
+              href="/"
               className="transition-colors hover:text-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-off-white"
             >
               Accueil
             </Link>
             <Link
-              href="/fr/services"
+              href="/services"
               className="transition-colors hover:text-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-off-white"
             >
               Services
             </Link>
             <Link
-              href="/fr/realisations"
+              href="/realisations"
               className="transition-colors hover:text-brass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-off-white"
             >
               Réalisations
@@ -39,7 +39,7 @@ export function SiteShell({children}: PropsWithChildren) {
           <div className="flex items-center gap-3">
             <LanguageSwitcher />
             <Button asChild size="sm" variant="secondary">
-              <Link href="/fr/contact">Demander un devis</Link>
+              <Link href="/contact">Demander un devis</Link>
             </Button>
           </div>
         </div>

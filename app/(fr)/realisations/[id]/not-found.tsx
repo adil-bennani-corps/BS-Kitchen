@@ -8,7 +8,7 @@ export default function NotFound() {
         Le projet que vous recherchez n’est plus disponible ou a été déplacé.
       </p>
       <Link
-        href="/fr/realisations"
+        href="/realisations"
         className="inline-flex rounded-full bg-charcoal px-6 py-3 text-sm font-semibold text-off-white transition hover:bg-charcoal/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass"
       >
         Retour aux réalisations

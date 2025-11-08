@@ -29,7 +29,7 @@ export default async function ServicesPage() {
     '@graph': [
       ...services.map((service) => ({
         '@type': service.schemaType,
-        '@id': `https://www.bskitchen.be/fr/services#${service.slug}`,
+        '@id': `https://www.bskitchen.be/services#${service.slug}`,
         name: service.title,
         description: service.short
       })),
@@ -40,13 +40,13 @@ export default async function ServicesPage() {
             '@type': 'ListItem',
             position: 1,
             name: t('breadcrumb.home'),
-            item: 'https://www.bskitchen.be/fr'
+            item: 'https://www.bskitchen.be'
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: t('breadcrumb.current'),
-            item: 'https://www.bskitchen.be/fr/services'
+            item: 'https://www.bskitchen.be/services'
           }
         ]
       }
@@ -67,7 +67,7 @@ export default async function ServicesPage() {
             <ol className="flex flex-wrap items-center gap-2">
               <li>
                 <Link
-                  href="/fr"
+                  href="/"
                   className="transition-colors hover:text-charcoal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass focus-visible:ring-offset-2 focus-visible:ring-offset-off-white"
                 >
                   {t('breadcrumb.home')}
@@ -105,7 +105,7 @@ export default async function ServicesPage() {
               <p className="mt-2 text-base text-off-white/80">{t('cta.blurb')}</p>
             </div>
             <Button asChild size="lg" variant="secondary" className="bg-off-white text-charcoal hover:bg-brass hover:text-charcoal">
-              <Link href="/fr/contact">{t('cta.button')}</Link>
+              <Link href="/contact">{t('cta.button')}</Link>
             </Button>
           </div>
         </section>

@@ -41,7 +41,7 @@ function RelatedProjectCard({project, index}: {project: Project; index: number})
       className="overflow-hidden rounded-3xl border border-charcoal/10 bg-white shadow-soft"
     >
       <Link
-        href={`/fr/realisations/${project.id}`}
+        href={`/realisations/${project.id}`}
         className="group block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brass"
       >
         <div className="relative aspect-video w-full overflow-hidden">

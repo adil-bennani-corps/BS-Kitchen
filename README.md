@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-Le site est accessible sur http://localhost:3000. Les locales sont servies sous `/fr` (par défaut) et `/nl`.
+Le site est accessible sur http://localhost:3000. La locale française par défaut est servie sans préfixe (`/`), la version néerlandaise est disponible sous `/nl`.
 
 ## Structure principale
 

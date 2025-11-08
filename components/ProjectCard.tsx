@@ -20,7 +20,7 @@ export function ProjectCard({project, index = 0, className}: ProjectCardProps) {
 
   return (
     <Link
-      href={`/fr/realisations/${project.id}`}
+      href={`/realisations/${project.id}`}
       aria-label={`${project.title} — ${project.city}`}
       className="group block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brass"
     >

@@ -86,7 +86,7 @@ export default function RealisationsPage({searchParams}: PageProps) {
     });
 
   const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.bskitchen.be').replace(/\/$/, '');
-  const pageUrl = `${baseUrl}/fr/realisations`;
+  const pageUrl = `${baseUrl}/realisations`;
 
   const collectionJsonLd = {
     '@context': 'https://schema.org',
@@ -98,7 +98,7 @@ export default function RealisationsPage({searchParams}: PageProps) {
     hasPart: filteredProjects.map((project) => ({
       '@type': 'CreativeWork',
       name: project.title,
-      url: `${baseUrl}/fr/realisations/${project.id}`,
+      url: `${baseUrl}/realisations/${project.id}`,
       image: project.images[0] ?? undefined
     }))
   };
@@ -111,7 +111,7 @@ export default function RealisationsPage({searchParams}: PageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Accueil',
-        item: `${baseUrl}/fr`
+        item: baseUrl
       },
       {
         '@type': 'ListItem',
@@ -162,7 +162,7 @@ export default function RealisationsPage({searchParams}: PageProps) {
               Aucune réalisation ne correspond à ces filtres.
             </p>
             <Link
-              href="/fr/realisations"
+              href="/realisations"
               className="mt-4 inline-flex rounded-full bg-charcoal px-6 py-2 text-sm font-semibold text-off-white transition hover:bg-charcoal/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brass"
             >
               Réinitialiser
